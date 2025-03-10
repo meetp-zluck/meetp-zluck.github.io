@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackIt - Smart Goal & Habit Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #48b02c;
+            --secondary-color: #3a8c23;
+            --text-color: #1f2937;
+            --light-bg: #f3f4f6;
+            --card-shadow: 0 4px 6px rgba(72, 176, 44, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+        }
+        
+        .demo-link {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+        
+        .demo-link:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .tech-card {
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 6px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem 0;
+            border-top: 1px solid var(--light-bg);
+        }
+        
+        .screens-section {
+            margin: 2rem 0;
+        }
+        
+        .screens-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .screen-item {
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 6px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TrackIt</h1>
+        <p>A comprehensive goal and habit tracking application built with React Native</p>
+        <a href="https://drive.google.com/file/d/1wfEw5LE507ABHdF2IOa2F4dVi_sNOid0/view?usp=drive_link" class="demo-link">Watch Demo</a>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>📊 Smart Goal Management</h3>
+            <ul>
+                <li>SMART Goal Setting</li>
+                <li>Goal Breakdown</li>
+                <li>Progress Tracking</li>
+                <li>Journal</li>
+                <li>Analytics</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3>🎯 Habit Tracking</h3>
+            <ul>
+                <li>Flexible Habit Creation</li>
+                <li>Memory Lane</li>
+                <li>Streak Tracking</li>
+                <li>Visual Progress</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3>📱 Smart Features</h3>
+            <ul>
+                <li>Voice Input</li>
+                <li>Smart Goal AI Analysis</li>
+                <li>Dynamic Habit Generation</li>
+                <li>Motivational Quotes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🤖 AI Integration</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <h3>Claude AI</h3>
+                <ul>
+                    <li>Goal analysis</li>
+                    <li>SMART validation</li>
+                    <li>Habit recommendations</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <h3>OpenAI Whisper</h3>
+                <ul>
+                    <li>Speech-to-text</li>
+                    <li>Voice recognition</li>
+                    <li>Transcription</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section screens-section">
+        <h2>📱 Screens</h2>
+        <div class="screens-grid">
+            <div class="screen-item">
+                <h3>Home Screen</h3>
+                <ul>
+                    <li>Goals overview</li>
+                    <li>Quick access features</li>
+                    <li>Progress summaries</li>
+                </ul>
+            </div>
+            <div class="screen-item">
+                <h3>Goals Screen</h3>
+                <ul>
+                    <li>Goal management</li>
+                    <li>Progress tracking</li>
+                    <li>Sub-task management</li>
+                </ul>
+            </div>
+            <div class="screen-item">
+                <h3>Habits Screen</h3>
+                <ul>
+                    <li>Habit tracking</li>
+                    <li>Daily check-ins</li>
+                    <li>Streak monitoring</li>
+                </ul>
+            </div>
+            <div class="screen-item">
+                <h3>Analytics Screen</h3>
+                <ul>
+                    <li>Progress charts</li>
+                    <li>Success metrics</li>
+                    <li>Pattern analysis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🛠 Technical Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <h3>Core Technologies</h3>
+                <ul>
+                    <li>React Native</li>
+                    <li>Redux</li>
+                    <li>TypeScript</li>
+                    <li>React Navigation</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <h3>UI Components</h3>
+                <ul>
+                    <li>React Native Reanimated</li>
+                    <li>Lottie Animations</li>
+                    <li>Vector Icons</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <h3>Data Management</h3>
+                <ul>
+                    <li>AsyncStorage</li>
+                    <li>Redux Persist</li>
+                    <li>Moment.js</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Future Enhancements</h2>
+        <ul>
+            <li>iOS support</li>
+            <li>Cloud sync capabilities</li>
+            <li>Social sharing features</li>
+            <li>Advanced analytics</li>
+            <li>Achievement system</li>
+            <li>Community features</li>
+            <li>AI-powered insights</li>
+            <li>Export functionality</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Built with ❤️ using React Native</p>
+        <p>Currently supports Android (iOS support coming soon)</p>
+    </div>
+</body>
+</html> 
