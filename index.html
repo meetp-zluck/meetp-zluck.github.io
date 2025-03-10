@@ -140,6 +140,26 @@
             margin-bottom: 1.5rem;
         }
         
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+        }
+        
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
@@ -156,6 +176,10 @@
             .logo {
                 width: 150px;
             }
+            
+            .video-container {
+                margin: 1rem auto;
+            }
         }
     </style>
 </head>
@@ -163,7 +187,17 @@
     <div class="header">
         <img src="https://private-user-images.githubusercontent.com/68635084/420756790-504f4ca2-f833-482b-af7a-b1900d8c5de1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE1ODEwMzQsIm5iZiI6MTc0MTU4MDczNCwicGF0aCI6Ii82ODYzNTA4NC80MjA3NTY3OTAtNTA0ZjRjYTItZjgzMy00ODJiLWFmN2EtYjE5MDBkOGM1ZGUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzEwVDA0MjUzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1NmEzNzQ2ZDhkNTVmN2UzNzBkY2M3OTMwM2JiMDYxZGY1MDE0MjFmODM5MzZiM2MzMTI3NTc5MTIzZGY2YWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.JQ49eRNyD3sx_RadMAilVWIXEArKwbJD7ZO3RwX-ZtE" alt="TrackIt Logo" class="logo">
         <p>A comprehensive goal and habit tracking application built with React Native</p>
-        <a href="https://drive.google.com/file/d/1wfEw5LE507ABHdF2IOa2F4dVi_sNOid0/view?usp=drive_link" class="demo-link">Watch Demo</a>
+        <div class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/BJvM4k38RM0" 
+                title="TrackIt Demo"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
 
     <div class="features-grid">
